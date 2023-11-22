@@ -7,12 +7,12 @@ async function bootstrap() {
 
   app.useGlobalPipes(new ValidationPipe());
 
-  // var corsOptions = {
-  //   origin: 'http://example.com',
-  //   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-  // }
+   var corsOptions = {
+     origin: ['http://localhost:3000/'],
+     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+   }
 
-  // app.enableCors(corsOptions);
+   app.enableCors(corsOptions);
 
   await app.listen(8001);
 }
