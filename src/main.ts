@@ -8,7 +8,7 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe());
 
    var corsOptions = {
-     origin: ['http://localhost:8001, https://testnet.delots.xyz/'],
+     origin: ['http://localhost:8001', 'https://testnet.delots.xyz/'],
      optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
    }
 
