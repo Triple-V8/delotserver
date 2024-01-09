@@ -8,7 +8,7 @@ import {
     Put,
     Query,
   } from '@nestjs/common';
-  import { HistoryService } from './History.service';
+  import { HistoryService } from './history.service';
   import { CreateHistoryDto } from './dto/create-history.dto';
   import { UpdateHistoryDto } from './dto/update-history.dto';
   import { History } from './schemas/History.schema';
