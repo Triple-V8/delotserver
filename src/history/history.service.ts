@@ -18,11 +18,11 @@ import {
     
   
     async create(History: History): Promise<History> {
-      const checkHistory = await this.HistoryModel.findOne(History);
+      // const checkHistory = await this.HistoryModel.findOne(History);
 
-      if (checkHistory) {
-        throw new BadRequestException('History has been used');
-      }
+      // if (checkHistory) {
+      //   throw new BadRequestException('History has been used');
+      // }
       
 
       const res = await this.HistoryModel.create(History);
